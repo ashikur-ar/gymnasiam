@@ -1,0 +1,46 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+/*=============================================================
+                        about css start
+=============================================================*/
+#about{
+    margin: 80px 0 80px;
+    .video{
+        position: relative;
+        .overly{
+            @include after_tl(0, 0, 100%, 100%, rgba(0, 0, 0, 0.60));
+            a{
+                @include middle();
+                width: 48px;
+                height: 48px;
+                background: #e23e38;
+                text-align: center;
+                line-height: 48px;
+                border-radius: 50%;
+                color: #1f1a1f;
+                font-size: 20px;
+            }
+        }
+    }
+    .video_text{
+        h2{
+            @include fs($para, 22px, 400, $osw);
+            text-transform: uppercase;
+        }
+        p{
+            @include fs($head, 14px, 400, $open);
+            line-height: 24px;
+            margin-top: 16px;
+            span{
+                display: block;
+                margin-top: 24px;
+            }
+        }
+    }
+    
+}
+/*=============================================================
+                        about css end
+=============================================================*/  

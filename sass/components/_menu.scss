@@ -1,0 +1,70 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+/*=============================================================
+                        menu css start
+=============================================================*/
+.main_menu{
+    background: rgba(53, 53, 53, 0.473);
+    height: 50px;
+    margin-top: 30px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 999;
+   .menu_fix{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       z-index: 999;
+   }
+    .navbar-brand{
+        width: 245px;
+        height: 70px;
+        background: #313131;
+        text-align: center;
+        line-height: 50px;
+        transform: skew(-40deg);
+        position: relative;
+        &::after{
+            @include after_tl(0, 0, 5px, 70px, #000);
+            border-left: transparent;
+        }
+        &::before{
+            @include after_tr(0, 0, 5px, 70px, #000);
+        }
+        img{
+            transform: skew(40deg);
+        }
+        
+    }
+    ul{
+        li{
+            a{
+                @include fs(#f1f1f1, 14px, 400, $osw);
+                text-transform: uppercase;
+                line-height: 50px;
+                padding: 0 10px;
+                transition:  all linear .3s;
+                position: relative;
+                &:hover{
+                    color: #222222;
+                    background: #ffffff;
+                    &::after{
+                        width: 100%;
+                    }
+                }
+                &::after{
+                    @include after_bl(0, 0, 0, 3px, red);
+                    transition: all linear .3s;
+                }
+            }
+        }
+    }
+}
+/*=============================================================
+                        menu css end
+=============================================================*/  

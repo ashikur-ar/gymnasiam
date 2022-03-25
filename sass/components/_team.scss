@@ -1,0 +1,97 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+/*=============================================================
+                        team css start
+=============================================================*/
+#team {
+    padding: 71px 0;
+
+    .common_head {
+        h2 {
+            @include fs(#222, 22px, 400, $osw);
+            text-transform: uppercase;
+        }
+    }
+
+    .team_main {
+        padding-top: 72px;
+        transition: all linear .3s;
+        .team_img {
+            position: relative;
+            .overly {
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                top: 10px;
+                bottom: 10px;
+                background: rgba(226, 62, 56, 0.50);
+                border: 5px solid rgba(255, 255, 255, 0.50);
+                transition: all linear .3s;
+                transform: scale(0);
+                ul{
+                    position: absolute;
+                    top: 50%;
+                    right: 25px;
+                    transform: translateY(-50%);
+                    li{
+                        a{
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #fff;
+                            text-align: center;
+                            line-height: 30px;
+                            margin-bottom: 10px;
+                            color: #fff;
+                            transition: all linear .3s;
+                            &:hover{
+                                background: #fff;
+                                border-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .team_text{
+            padding: 12px;
+            h2{
+                @include fs($para, 14px, 400, $osw);
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            h4{
+                @include fs($head, 14px, 400, $osw);
+                margin-bottom: 8px;
+            }
+            p{
+                @include fs($head, 13px, 400, $open);
+                transform: scale(0);
+                transition: all linear .3s;
+                span{
+                    display: block;
+                }
+            }
+        }
+        &:hover{
+            transform: translateY(-42px);
+            .team_img{
+                .overly{
+                    transform: scale(1);
+                }
+            }
+            .team_text{
+                border: 1px solid #ddd;
+                p{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+
+/*=============================================================
+                        team css end
+=============================================================*/

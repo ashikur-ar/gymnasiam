@@ -1,0 +1,233 @@
+@media (max-width: 575px) {
+
+    /* manu part start */
+    .main_menu .navbar-brand {
+        width: 190px;
+        height: 51px;
+        line-height: 44px;
+    }
+
+    .main_menu {
+        background: #e23e38;
+        height: 51px;
+        margin-top: 0px;
+    }
+
+    .main_menu .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+    }
+
+    .main_menu button i {
+        color: #fff;
+    }
+
+    .main_menu #navbarSupportedContent {
+        background: #e23e38;
+        text-align: center;
+    }
+
+    .main_menu .navbar-brand::before {
+        background: 0;
+    }
+
+    .main_menu .navbar-brand::after {
+        background: 0;
+    }
+
+    .main_menu ul li a::after {
+        background: 0;
+    }
+
+    .main_menu ul li a {
+        line-height: 35px;
+    }
+
+    /* manu part end */
+
+
+    /* banner part start */
+    .banner_item .banner_text h2 {
+        font-size: 22px;
+        margin-bottom: -2px;
+    }
+
+    .banner_item .banner_text h1 {
+        font-size: 35px;
+        margin-bottom: 3px;
+    }
+
+    .banner_item .banner_text p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .banner_item .banner_text a {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin: 15px 5.5px;
+    }
+
+    #banner .slick-dots li.slick-active button {
+        width: 14px;
+        height: 14px;
+    }
+
+    #banner .slick-dots li button {
+        width: 14px;
+        height: 14px;
+        margin: -6px 5px;
+    }
+
+    .banner_item {
+        padding: 115px 0 64px;
+    }
+
+    .banner_item .banner_text h2::before,
+    .banner_item .banner_text h2::after,
+    .banner_item .banner_text h1::before,
+    .banner_item .banner_text h1::after,
+    .banner_item .banner_text p::after,
+    .banner_item .banner_text p::before {
+        display: none;
+    }
+
+    /* banner part end */
+
+    /* about part start */
+    #about {
+        margin: 46px 0 46px;
+    }
+
+    #about .video_text h2 {
+        font-size: 14px;
+    }
+
+    #about .video_text p {
+        text-align: justify;
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 22px;
+        padding-bottom: 30px;
+    }
+
+    #about .video_text p span {
+        margin-top: 15px;
+    }
+
+    #Gallery .Gallery_banner .gallery_img:last-child {
+        margin-bottom: 30px;
+    }
+
+    #Gallery .Gallery_banner .gallery_img .overly {
+        opacity: 1;
+    }
+
+    #Gallery .Gallery_banner {
+        padding: 30px 0 0;
+    }
+
+    /* about part end */
+    /* team oart start */
+    #team .team_main .team_text {
+        border: 1px solid #ddd;
+    }
+
+    #team .team_main .team_img .overly {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    #team .team_main .team_text p {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    #team .team_main {
+        -webkit-transform: translateY(-42px);
+        transform: translateY(-42px);
+    }
+
+    #team {
+        padding: 32px 0;
+    }
+
+    #team .team_main {
+        padding-top: 29px;
+        -webkit-transition: all linear .3s;
+        transition: all linear .3s;
+    }
+
+    /* element {
+        margin-bottom: 48px;
+    } */
+
+    #testimonial .test_banner .test_text1 h2 {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    #testimonial .test_banner .test_text1 h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .test_img1 img {
+        text-align: center;
+    }
+
+    #testimonial .test_banner .test_text1 ul {
+        margin-left: 106px;
+    }
+
+    .test_text p {
+        text-align: justify;
+    }
+
+    #testimonial .test_banner {
+        padding: 30px 0 58px;
+    }
+
+    #testimonial .test_banner .test_text p {
+        margin-bottom: 11px;
+    }
+
+    /* team part start */
+    #testimonial {
+        padding: 0 0 46px;
+    }
+    #membership .common_head {
+        margin-bottom: 20px;
+    }
+ 
+    #membership .member_item a,
+    #membership .member_item a {
+        margin-bottom: 20px;
+        background: #e23e38;
+        color: #fff;
+    }
+    #membership .member_item h2 {
+        padding: 30px 0;
+        font-size: 42px;
+    }
+    #membership .member_item h3,
+    #membership .member_item h3 {
+        padding: 16px 0;
+        font-size: 14px;
+        background: #e23e38;
+        color: #fff;
+    }
+    #membership .member_item a {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    #membership .member_item .member_peragtaph .member_text5 p {
+        font-size: 11px;
+    }
+      /* team part start */
+      #classes .class_text ul{
+          flex-direction: column;
+      }
+      #classes .class_text ul li{
+          width: 100%;
+      }

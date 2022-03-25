@@ -1,0 +1,95 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+/*=============================================================
+                        membership css start
+=============================================================*/
+#membership{
+    margin-bottom: 80px;
+    .common_head{
+        h2{
+            @include fs($para, 22px, 400, $osw);
+            text-transform: uppercase;
+            
+        }
+    }
+    .member_item{
+        h3{
+            padding: 20px 0;
+            background: #dddddd;
+            @include fs($para, 16px, 700, $osw);
+            text-transform: uppercase;
+            transition: all linear .3s;
+        }
+        h2{
+            padding: 36px 0;
+            @include fs(#ffffff, 50px, 500, $osw);
+            position: relative;
+            z-index: 1;
+            span{
+                @include fs(#ffffff, 29px, 500, $osw);
+            }
+            &::after{
+                @include after_tl(0, 0, 100%, 100%, rgba(0, 0, 0, 0.80));
+                z-index: -1;
+            }
+        }
+        .member_peragtaph{
+            padding: 34px 0;
+            background: #f1f1f1;
+            .member_text1{
+                p{
+                    @include fs($head, 14px, 400, $open);
+                    margin-bottom: 15px;
+               }
+           }
+           .member_text2{
+                p{
+                    @include fs($head, 14px, 400, $open);
+                    margin-bottom: 14px;
+                }
+            }
+            .member_text3{
+                p{
+                    @include fs($head, 14px, 400, $open);
+                    margin-bottom: 17px;
+                }
+            }
+            .member_text4{
+                p{
+                    @include fs($head, 14px, 400, $open);
+                    margin-bottom: 16px;
+                }
+            }
+            .member_text5{
+                p{
+                    @include fs($head, 14px, 400, $open);
+                   
+                }
+            }
+        }
+        a{
+            padding: 13px 0;
+            background: #dddddd;
+            display: block;
+            border-radius: 0;
+            @include fs($para, 16px, 400, $open);
+            text-transform: uppercase;
+            transition: all linear .3s;
+        }
+        &:hover{
+            h3{
+                background: #e23e38;
+                color: #fff;
+            }
+            a{
+                background: #e23e38;
+                color: #fff;
+            }
+        }
+    }
+}
+/*=============================================================
+                        membership css end
+=============================================================*/  

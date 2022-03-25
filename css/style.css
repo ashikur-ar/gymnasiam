@@ -1,0 +1,1102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+/*=============================================================
+                        common css end
+=============================================================*/
+/*=============================================================
+                        menu css start
+=============================================================*/
+.main_menu {
+  background: rgba(53, 53, 53, 0.473);
+  height: 50px;
+  margin-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.main_menu .menu_fix {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.main_menu .navbar-brand {
+  width: 245px;
+  height: 70px;
+  background: #313131;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transform: skew(-40deg);
+          transform: skew(-40deg);
+  position: relative;
+}
+
+.main_menu .navbar-brand::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 70px;
+  background: #000;
+  border-left: transparent;
+}
+
+.main_menu .navbar-brand::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 70px;
+  background: #000;
+}
+
+.main_menu .navbar-brand img {
+  -webkit-transform: skew(40deg);
+          transform: skew(40deg);
+}
+
+.main_menu ul li a {
+  color: #f1f1f1;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: 50px;
+  padding: 0 10px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  position: relative;
+}
+
+.main_menu ul li a:hover {
+  color: #222222;
+  background: #ffffff;
+}
+
+.main_menu ul li a:hover::after {
+  width: 100%;
+}
+
+.main_menu ul li a::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: red;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+/*=============================================================
+                        menu css end
+=============================================================*/
+/*=============================================================
+                        banner css start
+=============================================================*/
+.banner_item {
+  padding: 233px 0 90px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner_item::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.603);
+  z-index: -1;
+}
+
+.banner_item .banner_text h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.banner_item .banner_text h2::after {
+  position: absolute;
+  content: '';
+  left: -3px;
+  top: 23px;
+  width: 164px;
+  height: 3px;
+  background: red;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 95% 98%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 95% 98%, 0% 100%);
+}
+
+.banner_item .banner_text h2::before {
+  position: absolute;
+  content: '';
+  right: -27px;
+  top: 23px;
+  width: 164px;
+  height: 3px;
+  background: red;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 99% 99%, 5% 100%);
+          clip-path: polygon(0 0, 100% 0%, 99% 99%, 5% 100%);
+}
+
+.banner_item .banner_text h1 {
+  color: #e23e38;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+  position: relative;
+}
+
+.banner_item .banner_text h1::after {
+  position: absolute;
+  content: '';
+  left: -3px;
+  top: -23px;
+  width: 3px;
+  height: 199px;
+  background: red;
+}
+
+.banner_item .banner_text h1::before {
+  position: absolute;
+  content: '';
+  right: -27px;
+  top: -23px;
+  width: 3px;
+  height: 199px;
+  background: red;
+}
+
+.banner_item .banner_text p {
+  color: #dddddd;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 18px;
+  position: relative;
+}
+
+.banner_item .banner_text p::after {
+  position: absolute;
+  content: '';
+  left: -3px;
+  bottom: -57px;
+  width: 74px;
+  height: 3px;
+  background: red;
+}
+
+.banner_item .banner_text p::before {
+  position: absolute;
+  content: '';
+  right: -27px;
+  bottom: -57px;
+  width: 46px;
+  height: 3px;
+  background: red;
+}
+
+.banner_item .banner_text a {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin: 28px 12.5px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.banner_item .banner_text a:hover {
+  background: #e23e38;
+  border-color: #e23e38;
+}
+
+#banner .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#banner .slick-dots li button {
+  font-size: 0px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: transparent;
+}
+
+#banner .slick-dots li.slick-active button {
+  width: 20px;
+  height: 20px;
+  background: #e23e38;
+  border-color: #e23e38;
+}
+
+/*=============================================================
+                        banner css end
+=============================================================*/
+/*=============================================================
+                        about css start
+=============================================================*/
+#about {
+  margin: 80px 0 80px;
+}
+
+#about .video {
+  position: relative;
+}
+
+#about .video .overly {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#about .video .overly a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: #e23e38;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+  color: #1f1a1f;
+  font-size: 20px;
+}
+
+#about .video_text h2 {
+  color: #222222;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+#about .video_text p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+#about .video_text p span {
+  display: block;
+  margin-top: 24px;
+}
+
+/*=============================================================
+                        about css end
+=============================================================*/
+/*=============================================================
+                        about css start
+=============================================================*/
+#Gallery {
+  margin-top: 50px;
+}
+
+#Gallery .Gallery_banner {
+  padding-top: 50px;
+  padding: 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+#Gallery .Gallery_banner::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+#Gallery .Gallery_banner .gallery_img {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#Gallery .Gallery_banner .gallery_img:last-child {
+  margin-bottom: 0;
+}
+
+#Gallery .Gallery_banner .gallery_img .overly {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  background: rgba(226, 62, 56, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  opacity: 0;
+}
+
+#Gallery .Gallery_banner .gallery_img .overly a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+#Gallery .Gallery_banner .gallery_img:hover .overly {
+  opacity: 1;
+}
+
+/*=============================================================
+                        about css end
+=============================================================*/
+/*=============================================================
+                        team css start
+=============================================================*/
+#team {
+  padding: 71px 0;
+}
+
+#team .common_head h2 {
+  color: #222;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+#team .team_main {
+  padding-top: 72px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#team .team_main .team_img {
+  position: relative;
+}
+
+#team .team_main .team_img .overly {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  background: rgba(226, 62, 56, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#team .team_main .team_img .overly ul {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#team .team_main .team_img .overly ul li a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#team .team_main .team_img .overly ul li a:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+#team .team_main .team_text {
+  padding: 12px;
+}
+
+#team .team_main .team_text h2 {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+#team .team_main .team_text h4 {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 8px;
+}
+
+#team .team_main .team_text p {
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#team .team_main .team_text p span {
+  display: block;
+}
+
+#team .team_main:hover {
+  -webkit-transform: translateY(-42px);
+          transform: translateY(-42px);
+}
+
+#team .team_main:hover .team_img .overly {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#team .team_main:hover .team_text {
+  border: 1px solid #ddd;
+}
+
+#team .team_main:hover .team_text p {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/*=============================================================
+                        team css end
+=============================================================*/
+/*=============================================================
+                        about css start
+=============================================================*/
+#testimonial {
+  padding: 0 0 79px;
+}
+
+#testimonial .common_head {
+  margin-bottom: 30px;
+}
+
+#testimonial .common_head h2 {
+  color: #222222;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+#testimonial .test_banner {
+  padding: 30px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+#testimonial .test_banner::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+#testimonial .test_banner .test_text1 h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+#testimonial .test_banner .test_text1 h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 5px;
+}
+
+#testimonial .test_banner .test_text1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+#testimonial .test_banner .test_text1 ul li a {
+  color: #e23e38;
+  font-size: 14px;
+}
+
+#testimonial .test_banner .test_text p {
+  color: #ddd;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 18px;
+  margin-bottom: 21px;
+}
+
+#testimonial .slick-slide {
+  padding: 0 15px;
+}
+
+#testimonial .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 0;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: auto;
+}
+
+#testimonial .slick-dots li {
+  margin: 0 5px;
+}
+
+#testimonial .slick-dots li button {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+}
+
+#testimonial .slick-dots li.slick-active button {
+  background: red;
+  border-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+/*=============================================================
+                        about css end
+=============================================================*/
+/*=============================================================
+                        membership css start
+=============================================================*/
+#membership {
+  margin-bottom: 80px;
+}
+
+#membership .common_head h2 {
+  color: #222222;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+#membership .member_item h3 {
+  padding: 20px 0;
+  background: #dddddd;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#membership .member_item h2 {
+  padding: 36px 0;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+#membership .member_item h2 span {
+  color: #ffffff;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+
+#membership .member_item h2::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+#membership .member_item .member_peragtaph {
+  padding: 34px 0;
+  background: #f1f1f1;
+}
+
+#membership .member_item .member_peragtaph .member_text1 p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+#membership .member_item .member_peragtaph .member_text2 p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 14px;
+}
+
+#membership .member_item .member_peragtaph .member_text3 p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 17px;
+}
+
+#membership .member_item .member_peragtaph .member_text4 p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 16px;
+}
+
+#membership .member_item .member_peragtaph .member_text5 p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+#membership .member_item a {
+  padding: 13px 0;
+  background: #dddddd;
+  display: block;
+  border-radius: 0;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#membership .member_item:hover h3 {
+  background: #e23e38;
+  color: #fff;
+}
+
+#membership .member_item:hover a {
+  background: #e23e38;
+  color: #fff;
+}
+
+/*=============================================================
+                        membership css end
+=============================================================*/
+/*=============================================================
+                        count css start
+=============================================================*/
+#count .count_banner {
+  padding: 45px 0;
+  position: relative;
+  z-index: 1;
+}
+
+#count .count_banner::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.808);
+  z-index: -1;
+}
+
+#count .count_banner .counter_body {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#count .count_banner .counter_body h4 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+
+#count .count_banner .counter_body p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+#count .count_banner .counter_body ul {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#count .count_banner .counter_body ul li {
+  text-align: center;
+}
+
+/*=============================================================
+                        count css end
+=============================================================*/
+/*=============================================================
+                        count css start
+=============================================================*/
+#classes {
+  padding: 81px 0;
+}
+
+#classes .common_head h2 {
+  color: #222222;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+#classes .class_menu {
+  height: 50px;
+  background: #f1f1f1;
+}
+
+#classes .class_menu li {
+  width: 16.66666666666666666%;
+}
+
+#classes .class_menu li button {
+  height: 50px;
+  border-radius: 0;
+  width: 100%;
+  color: #222222;
+}
+
+#classes .class_menu li button.active, #classes .class_menu li button .show > .nav-link {
+  color: #fff;
+  background-color: #e23e38;
+}
+
+#classes .class_text ul li {
+  width: 19.65%;
+  background: #f1f1f1;
+  margin-left: 5px;
+  margin-bottom: 5lx;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 51px 0;
+}
+
+#classes .class_text ul li:nth-child(1), #classes .class_text ul li:nth-child(6) {
+  margin-left: 0;
+}
+
+/*=============================================================
+                        count css end
+=============================================================*/
+/*=============================================================
+                        client css start
+=============================================================*/
+#client {
+  padding-bottom: 80px;
+}
+
+#client .client_slider .draggable {
+  padding: 10px 0 !important;
+}
+
+#client .client_slider .slick-slide {
+  padding: 0 12px;
+}
+
+#client .client_slider .slick-center img {
+  -webkit-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.438);
+          box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.438);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#client .prv_arr,
+#client .nxt_arr {
+  position: absolute;
+  top: 25%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  z-index: 999;
+  font-size: 28px;
+  color: #444444;
+}
+
+#client .prv_arr {
+  left: -30px;
+}
+
+#client .nxt_arr {
+  right: -1157px;
+}
+
+/*=============================================================
+                        client css end
+=============================================================*/
+/*=============================================================
+                        footer css start
+=============================================================*/
+#footer {
+  position: relative;
+  z-index: 0;
+}
+
+#footer::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.87);
+  z-index: -1;
+}
+
+#footer .footer_logo {
+  padding: 30px 0;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 27px;
+}
+
+#footer .foot_text h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 26px;
+}
+
+#footer .foot_week ul li {
+  color: #ddd;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5px;
+}
+
+#footer .foot_time ul li {
+  color: #ddd;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5px;
+}
+
+#footer .foot_middle h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 26px;
+}
+
+#footer .foot_middle p {
+  color: #ddd;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 28px;
+  position: relative;
+  padding-bottom: 31px;
+  line-height: 18px;
+}
+
+#footer .foot_middle p i {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #1da1f2;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+#footer .foot_middle p span {
+  display: block;
+}
+
+#footer .footer_img_text h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 26px;
+}
+
+#footer .footer_img_text ul li {
+  width: 22.11%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#footer .footer_img_text ul li:nth-child(4), #footer .footer_img_text ul li:nth-child(8), #footer .footer_img_text ul li:nth-child(12) {
+  margin-right: 0;
+}
+
+#footer .footer_img_text ul li:nth-child(9), #footer .footer_img_text ul li:nth-child(10), #footer .footer_img_text ul li:nth-child(11), #footer .footer_img_text ul li:nth-child(12) {
+  margin-bottom: 0;
+}
+
+#footer .foot_contact h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 26px;
+}
+
+#footer .foot_contact p {
+  color: #ddd;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 7px;
+}
+
+#footer .foot_contact p i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e23e38;
+  margin-top: 5px;
+}
+
+#footer .foot_contact a {
+  color: #ddd;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 5px;
+}
+
+#footer .foot_contact a i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e23e38;
+  margin-top: 5px;
+}
+
+#footer .foot_contact h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+
+#footer .foot_icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer .foot_icon ul li a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 5px;
+}
+
+/*=============================================================
+                        footer css end
+=============================================================*/
+/*# sourceMappingURL=style.css.map */

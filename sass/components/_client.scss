@@ -1,0 +1,46 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+/*=============================================================
+                        client css start
+=============================================================*/
+#client {
+    padding-bottom: 80px;
+
+    .client_slider {
+        .draggable {
+            padding: 10px 0 !important;
+        }
+
+        .slick-slide {
+            padding: 0 12px;
+        }
+
+        .slick-center {
+            img {
+                box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.438);
+                transition: all linear .3s;
+            }
+        }
+    }
+    .prv_arr,
+    .nxt_arr{
+        position: absolute;
+        top: 25%;
+        transform: translateY(50%);
+        z-index: 999;
+        font-size: 28px;
+        color: #444444;
+    }
+    .prv_arr{
+        left: -30px;
+    }
+    .nxt_arr {
+        right: -1157px;
+    }
+}
+
+/*=============================================================
+                        client css end
+=============================================================*/

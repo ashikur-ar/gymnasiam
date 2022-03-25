@@ -1,0 +1,57 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+/*=============================================================
+                        count css start
+=============================================================*/
+#classes{
+    padding: 81px 0;
+    .common_head{
+        h2{
+            @include fs($para, 22px, 400, $osw);
+            text-transform: uppercase;
+        }
+    }
+   
+   .class_menu{
+       height: 50px;
+       background: #f1f1f1;
+       li{
+           width: 16.66666666666666666%;
+           button{
+               height: 50px;
+               border-radius: 0;
+               width: 100%;
+               color: #222222;
+               &.active, .show > .nav-link{
+                   color: #fff;
+                   background-color: #e23e38;
+               }   
+           }        
+       }
+   }
+   .class_text{
+       ul{
+           li{
+               width: 19.65%;
+               background: #f1f1f1;
+               margin-left: 5px;
+               margin-bottom: 5lx;
+              margin-bottom: 5px;
+              text-align: center;
+              padding: 51px 0;
+              &:nth-child(1),
+              &:nth-child(6){
+                  margin-left: 0;
+              }
+           }
+       }
+   }
+      
+       
+      
+}
+/*=============================================================
+                        count css end
+=============================================================*/  

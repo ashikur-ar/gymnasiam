@@ -1,0 +1,52 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+
+/*=============================================================
+                        count css start
+=============================================================*/
+#count {
+    .count_banner {
+        padding: 45px 0;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            @include after_tl(0, 0, 100%, 100%, rgba(0, 0, 0, 0.808));
+            z-index: -1;
+        }
+
+        .counter_body {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            h4 {
+                @include fs(#fff, 40px, 700, $osw);
+
+
+            }
+
+            p {
+                @include fs(#fff, 16px, 400, $osw);
+
+            }
+
+            ul {
+             
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                li {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+/*=============================================================
+                        count css end
+=============================================================*/
